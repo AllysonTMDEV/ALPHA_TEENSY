@@ -21,7 +21,7 @@ Controlador de navegacao desenvolvido pela **Alpha Subsea** para ROVs e drones s
 AFC_CICLO DESENVOLVIMENTO.html    # Ciclo de desenvolvimento (40% completo)
 AFC_TEENSY_PCB_DOCUMENTACAO.md    # Documentacao tecnica completa
 BOM_AFC_TEENSY_LCSC.csv           # Lista de materiais com codigos LCSC
-Gerber_*.zip                       # Arquivos Gerber para JLCPCB
+Gerber_*.zip                       # Arquivos Gerber para fabricacao
 PCB_*.json                         # PCB EasyEDA
 PCB_*.kicad_pcb                    # PCB KiCad
 SCH_*.json                         # Esquematico EasyEDA
@@ -36,15 +36,15 @@ Sheet_1_*.schdoc                   # Esquematico Altium (para KiCad)
 |------|-----------|--------|
 | 1. Plan | 100% | Concluido |
 | 2. Code | 100% | Firmware + Esquematico prontos |
-| 3. Build | 88% | Aguardando envio JLCPCB |
+| 3. Build | 100% | Gerbers prontos para fabricacao |
 | 4. Test | 0% | Pendente |
 | 5. Homologation | 0% | Pendente |
 
-**Progresso Geral: 40%**
+**Progresso Geral: 42%**
 
 ## BOM - Lista de Materiais
 
-Total de **63 componentes** com codigos LCSC para montagem SMD na JLCPCB.
+Total de **63 componentes** com codigos LCSC para montagem SMD.
 
 ### Componentes Principais:
 | Componente | Modelo | LCSC |
@@ -61,10 +61,9 @@ Total de **63 componentes** com codigos LCSC para montagem SMD na JLCPCB.
 
 ## Como Fabricar
 
-1. **Upload para JLCPCB:**
-   - Fazer upload do arquivo `Gerber_*.zip`
-   - Selecionar montagem SMD (Assembly)
-   - Fazer upload do `BOM_AFC_TEENSY_LCSC.csv`
+1. **Fabricacao da PCB:**
+   - Utilizar o arquivo `Gerber_*.zip` para fabricacao
+   - BOM disponivel em `BOM_AFC_TEENSY_LCSC.csv`
 
 2. **Importar no KiCad 9.0:**
    - `File` -> `Import Project...` -> `Altium Designer`
