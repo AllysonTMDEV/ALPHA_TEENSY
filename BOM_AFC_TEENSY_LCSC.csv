@@ -1,0 +1,130 @@
+Referencia,Quantidade,Valor/Part Number,Descricao,Footprint,LCSC,Tipo JLCPCB
+========== ICs PRINCIPAIS ==========
+U1,1,PCA9685PW 118,PWM Driver 16ch I2C,TSSOP-28,C2678753,Extended Part
+U2,1,ADS1115IDGSR,ADC 16-bit 4ch I2C,MSOP-10,C37593,Extended Part
+U3,1,ICM-42688-P,IMU 6-axis Accel/Gyro,LGA-14,C1850418,Extended Part
+U4,1,LIS3MDLTR,Magnetometro 3-axis I2C,LGA-12,C478483,Extended Part
+U5,1,BMP390,Barometro/Altimetro I2C,LGA-10,C9900016584,Extended Part
+U6,1,INA226AIDGSR,Monitor Corrente/Tensao I2C,MSOP-10,C49851,Extended Part
+U7,1,MP1584EN-LF-Z,Buck Converter 3A,SOIC-8 EP,C15051,Extended Part
+U8,1,AMS1117-3.3,LDO Regulador 3.3V 1A,SOT-223,C6186,Basic Part
+U10,1,PPTC 1.5A/13.2V,Fusivel Resetavel,1206,C9900007450,Extended Part
+U11,1,7325-2400A1210-03,Crystal 24MHz,SMD 3225,C17701336,Extended Part
+========== DIODOS ==========
+D1,1,SMBJ24A-TR,TVS Diodo 24V,SMB,C133668,Extended Part
+D2,1,SS34,Schottky Diodo 3A 40V,SMA,C8678,Basic Part
+D3,1,SS34,Schottky Diodo 3A 40V,SMA,C8678,Basic Part
+========== TRANSISTORES ==========
+Q1,1,AO3400A,MOSFET N-CH 30V 5.7A,SOT-23,C20917,Basic Part
+Q2,1,AO3400A,MOSFET N-CH 30V 5.7A,SOT-23,C20917,Basic Part
+========== RESISTORES ==========
+R1,1,10kΩ,Resistor SMD,0402,C25744,Basic Part
+R2,1,10kΩ,Resistor SMD,0402,C25744,Basic Part
+R3,1,10kΩ,Resistor SMD,0402,C25744,Basic Part
+R4,1,10kΩ,Resistor SMD,0402,C25744,Basic Part
+R5,1,10kΩ,Resistor SMD,0402,C25744,Basic Part
+R6,1,10kΩ,Resistor SMD,0402,C25744,Basic Part
+R7,1,10kΩ,Resistor SMD,0402,C25744,Basic Part
+R8,1,10kΩ,Resistor SMD,0402,C25744,Basic Part
+R9,1,4.7kΩ,Resistor SMD,0402,C25900,Basic Part
+R10,1,4.7kΩ,Resistor SMD,0402,C25900,Basic Part
+R11,1,4.7kΩ,Resistor SMD,0402,C25900,Basic Part
+R12,1,4.7kΩ,Resistor SMD,0402,C25900,Basic Part
+R13,1,330Ω,Resistor SMD,0402,C2889360,Extended Part
+R14,1,330Ω,Resistor SMD,0402,C2889360,Extended Part
+R15,1,330Ω,Resistor SMD,0402,C2889360,Extended Part
+R16,1,330Ω,Resistor SMD,0402,C2889360,Extended Part
+R17,1,0.01Ω 1W,Resistor Shunt Sense,2512,C76272,Extended Part
+========== CAPACITORES ==========
+C1,1,10uF 25V,Capacitor Ceramico,0805,C15850,Basic Part
+C2,1,10uF 25V,Capacitor Ceramico,0805,C15850,Basic Part
+C3,1,10uF 25V,Capacitor Ceramico,0805,C15850,Basic Part
+C4,1,10uF 25V,Capacitor Ceramico,0805,C15850,Basic Part
+C5,1,100nF 50V,Capacitor Ceramico,0402,C1525,Basic Part
+C6,1,100nF 50V,Capacitor Ceramico,0402,C1525,Basic Part
+C7,1,100nF 50V,Capacitor Ceramico,0402,C1525,Basic Part
+C8,1,100nF 50V,Capacitor Ceramico,0402,C1525,Basic Part
+C9,1,100nF 50V,Capacitor Ceramico,0402,C1525,Basic Part
+C10,1,100nF 50V,Capacitor Ceramico,0402,C1525,Basic Part
+C11,1,100nF 50V,Capacitor Ceramico,0402,C1525,Basic Part
+C12,1,100nF 50V,Capacitor Ceramico,0402,C1525,Basic Part
+C13,1,1uF 16V,Capacitor Ceramico,0402,C52923,Basic Part
+C14,1,1uF 16V,Capacitor Ceramico,0402,C52923,Basic Part
+C15,1,1uF 16V,Capacitor Ceramico,0402,C52923,Basic Part
+C16,1,1uF 16V,Capacitor Ceramico,0402,C52923,Basic Part
+C17,1,22uF 25V,Capacitor Ceramico,0805,C45783,Basic Part
+C18,1,22uF 25V,Capacitor Ceramico,0805,C45783,Basic Part
+C19,1,47uF 10V,Capacitor Ceramico,1206,C5448950,Extended Part
+C20,1,47uF 10V,Capacitor Ceramico,1206,C5448950,Extended Part
+========== LEDs e BUZZER ==========
+LED1,1,WS2812B-5050RGB,LED RGB Enderecavel,5050,C2838584,Extended Part
+LED2,1,WS2812B-5050RGB,LED RGB Enderecavel,5050,C2838584,Extended Part
+BUZZER1,1,MLT-8530,Buzzer 2700Hz,SMD 8.5x8.5,C94599,Extended Part
+========== CONECTORES ==========
+CN1,1,S4B-XH-SM4-TB(LF)(SN),Conector JST XH 4P SMD,XH-4P SMD,C5306499,Extended Part
+P9,1,PHD2.0mm-2X5,Header 2x5 2mm,THT,C49123,Extended Part
+
+========================================
+RESUMO PARA PEDIDO JLCPCB (ATUALIZADO)
+========================================
+
+BASIC PARTS (estoque JLCPCB - sem taxa extra):
+LCSC,Qtd,Componente
+C6186,1,AMS1117-3.3 LDO
+C8678,2,SS34 Schottky
+C20917,2,AO3400A MOSFET
+C25744,8,10kΩ 0402
+C25900,4,4.7kΩ 0402
+C15850,4,10uF 0805
+C1525,8,100nF 0402
+C52923,4,1uF 0402
+C45783,2,22uF 0805
+
+EXTENDED PARTS (taxa extra ~$3 por tipo):
+LCSC,Qtd,Componente
+C2678753,1,PCA9685PW PWM Driver
+C37593,1,ADS1115 ADC
+C1850418,1,ICM-42688-P IMU
+C478483,1,LIS3MDLTR Magnetometro
+C9900016584,1,BMP390 Barometro
+C49851,1,INA226 Power Monitor
+C15051,1,MP1584EN Buck
+C9900007450,1,PPTC Fusivel
+C17701336,1,Crystal 24MHz
+C133668,1,SMBJ24A TVS
+C2889360,4,330Ω 0402
+C76272,1,0.01Ω Shunt
+C5448950,2,47uF 1206
+C2838584,2,WS2812B LED RGB
+C94599,1,MLT-8530 Buzzer
+C5306499,1,JST XH 4P
+C49123,1,Header 2x5
+
+========================================
+COMPONENTES NAO LCSC (comprar separado)
+========================================
+TEENSY 4.1,1,Microcontrolador ARM Cortex-M7 600MHz,PJRC Store ou Aliexpress
+
+========================================
+TOTAL DE COMPONENTES: 63 unidades
+========================================
+- ICs: 11
+- Diodos: 3
+- Transistores: 2
+- Resistores: 17
+- Capacitores: 20
+- LEDs: 2
+- Buzzer: 1
+- Conectores: 2
+- Teensy: 1 (separado)
+
+========================================
+ESTIMATIVA DE CUSTOS (USD)
+========================================
+Basic Parts (35 unid): ~$1.50
+Extended Parts (28 unid): ~$25-30
+Taxa Extended (17 tipos x $3): ~$51
+Teensy 4.1: ~$30
+PCB (5 unidades): ~$5-10
+
+TOTAL APROXIMADO: ~$115-125 para 1 placa montada

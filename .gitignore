@@ -1,0 +1,13 @@
+# Temporary files
+*.lck
+*~
+#auto_saved_files#
+_autosave-*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup

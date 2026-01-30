@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFC - Ciclo de Desenvolvimento</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f5f5; color: #333; padding: 30px; line-height: 1.6; }
+        
+        h1 { text-align: center; margin-bottom: 5px; font-size: 1.8em; color: #222; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 40px; font-size: 0.95em; }
+        
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        .phase { background: #fff; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 20px; overflow: hidden; }
+        .phase-header { background: #f8f8f8; padding: 15px 20px; border-bottom: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; }
+        .phase-header h2 { font-size: 1.1em; color: #333; font-weight: 600; }
+        .phase-body { padding: 20px; }
+        .phase-desc { color: #666; margin-bottom: 15px; font-size: 0.9em; }
+        
+        .status { font-size: 0.8em; padding: 4px 12px; border-radius: 3px; font-weight: 500; }
+        .status-done { background: #e8f5e9; color: #2e7d32; }
+        .status-progress { background: #fff3e0; color: #e65100; }
+        .status-pending { background: #f5f5f5; color: #757575; }
+        
+        .tasks { list-style: none; }
+        .tasks li { padding: 8px 0; border-bottom: 1px solid #eee; font-size: 0.9em; display: flex; align-items: center; gap: 10px; }
+        .tasks li:last-child { border-bottom: none; }
+        .tasks li .marker { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+        .tasks li.done .marker { background: #4caf50; }
+        .tasks li.progress .marker { background: #ff9800; }
+        .tasks li.pending .marker { background: #bdbdbd; }
+        
+        .progress-bar { height: 4px; background: #e0e0e0; border-radius: 2px; margin-top: 15px; }
+        .progress-fill { height: 100%; background: #666; border-radius: 2px; }
+        
+        .summary { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 25px; margin-top: 30px; }
+        .summary h2 { font-size: 1.1em; margin-bottom: 20px; color: #333; }
+        
+        .summary-table { width: 100%; border-collapse: collapse; }
+        .summary-table td { padding: 10px; border-bottom: 1px solid #eee; }
+        .summary-table tr:last-child td { border-bottom: none; }
+        
+        .overall-bar { height: 20px; background: #e0e0e0; border-radius: 3px; margin: 20px 0; overflow: hidden; }
+        .overall-fill { height: 100%; background: #555; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.8em; font-weight: 500; }
+        
+        .docs { margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee; }
+        .docs h3 { font-size: 1em; margin-bottom: 10px; color: #333; }
+        .docs a { color: #1976d2; text-decoration: none; display: block; padding: 5px 0; font-size: 0.9em; }
+        .docs a:hover { text-decoration: underline; }
+        
+        .next-step { margin-top: 25px; padding: 15px; background: #f8f8f8; border: 1px solid #ddd; border-radius: 4px; }
+        .next-step h3 { font-size: 0.95em; margin-bottom: 8px; color: #333; }
+        .next-step p { font-size: 0.9em; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AFC - Alpha Flight Controller</h1>
+        <p class="subtitle">Ciclo de Desenvolvimento | Teensy 4.1 PCB</p>
+
+        <!-- PLAN -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2>1. PLAN</h2>
+                <span class="status status-done">100% Concluido</span>
+            </div>
+            <div class="phase-body">
+                <p class="phase-desc">Planejamento, requisitos e especificacoes do projeto.</p>
+                <ul class="tasks">
+                    <li class="done"><span class="marker"></span>Definicao de requisitos do ROV/Drone</li>
+                    <li class="done"><span class="marker"></span>Selecao do microcontrolador (Teensy 4.1)</li>
+                    <li class="done"><span class="marker"></span>Definicao de sensores (IMU, Baro, Mag, ADC)</li>
+                    <li class="done"><span class="marker"></span>Especificacao de interfaces (I2C, SPI, PWM)</li>
+                    <li class="done"><span class="marker"></span>Criacao da BOM (Bill of Materials)</li>
+                    <li class="done"><span class="marker"></span>Selecao de componentes LCSC/JLCPCB</li>
+                    <li class="done"><span class="marker"></span>Documentacao de pinagem e conexoes</li>
+                </ul>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+            </div>
+        </div>
+
+        <!-- CODE -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2>2. CODE</h2>
+                <span class="status status-done">100% Concluido</span>
+            </div>
+            <div class="phase-body">
+                <p class="phase-desc">Design do esquematico e codigo do firmware.</p>
+                <ul class="tasks">
+                    <li class="done"><span class="marker"></span>Criacao do projeto no EasyEDA</li>
+                    <li class="done"><span class="marker"></span>Adicao de todos os componentes</li>
+                    <li class="done"><span class="marker"></span>Verificacao de footprints LCSC</li>
+                    <li class="done"><span class="marker"></span>Documentacao de conexoes (4 partes)</li>
+                    <li class="done"><span class="marker"></span>Conexoes do esquematico (wiring)</li>
+                    <li class="done"><span class="marker"></span>Verificacao DRC do esquematico</li>
+                    <li class="done"><span class="marker"></span>Firmware basico Teensy (PlatformIO)</li>
+                    <li class="done"><span class="marker"></span>Drivers para sensores I2C/SPI</li>
+                    <li class="done"><span class="marker"></span>Controlador PID implementado</li>
+                    <li class="done"><span class="marker"></span>Mixer de Thrusters (8 canais)</li>
+                    <li class="done"><span class="marker"></span>Protocolo serial 1Mbps</li>
+                    <li class="progress"><span class="marker"></span>Integracao com Raspberry Pi</li>
+                </ul>
+                <div class="progress-bar"><div class="progress-fill" style="width: 100%"></div></div>
+            </div>
+        </div>
+
+        <!-- BUILD -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2>3. BUILD</h2>
+                <span class="status status-done">100% Concluido</span>
+            </div>
+            <div class="phase-body">
+                <p class="phase-desc">Layout da PCB e fabricacao.</p>
+                <ul class="tasks">
+                    <li class="done"><span class="marker"></span>Conversao esquematico para PCB</li>
+                    <li class="done"><span class="marker"></span>Posicionamento de componentes</li>
+                    <li class="done"><span class="marker"></span>Roteamento de trilhas</li>
+                    <li class="done"><span class="marker"></span>Planos de GND e Power</li>
+                    <li class="done"><span class="marker"></span>Verificacao DRC da PCB (0 erros)</li>
+                    <li class="done"><span class="marker"></span>Geracao de Gerbers</li>
+                    <li class="done"><span class="marker"></span>BOM LCSC completa (63 componentes)</li>
+                    <li class="pending"><span class="marker"></span>Envio para JLCPCB</li>
+                </ul>
+                <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+            </div>
+        </div>
+
+        <!-- TEST -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2>4. TEST</h2>
+                <span class="status status-pending">0% Pendente</span>
+            </div>
+            <div class="phase-body">
+                <p class="phase-desc">Testes funcionais e validacao.</p>
+                <ul class="tasks">
+                    <li class="pending"><span class="marker"></span>Inspecao visual da PCB</li>
+                    <li class="pending"><span class="marker"></span>Teste de alimentacao (5V, 3.3V)</li>
+                    <li class="pending"><span class="marker"></span>Teste de comunicacao I2C</li>
+                    <li class="pending"><span class="marker"></span>Teste de comunicacao SPI (IMU)</li>
+                    <li class="pending"><span class="marker"></span>Leitura de sensores individualmente</li>
+                    <li class="pending"><span class="marker"></span>Teste de saidas PWM (servos)</li>
+                    <li class="pending"><span class="marker"></span>Teste de LEDs e buzzer</li>
+                    <li class="pending"><span class="marker"></span>Teste de consumo de corrente</li>
+                </ul>
+                <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+            </div>
+        </div>
+
+        <!-- HOMOLOGATION -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2>5. HOMOLOGATION</h2>
+                <span class="status status-pending">0% Pendente</span>
+            </div>
+            <div class="phase-body">
+                <p class="phase-desc">Validacao e aprovacao do design.</p>
+                <ul class="tasks">
+                    <li class="pending"><span class="marker"></span>Teste de stress termico</li>
+                    <li class="pending"><span class="marker"></span>Teste de EMI/EMC basico</li>
+                    <li class="pending"><span class="marker"></span>Validacao de precisao dos sensores</li>
+                    <li class="pending"><span class="marker"></span>Teste de latencia de comunicacao</li>
+                    <li class="pending"><span class="marker"></span>Integracao com sistema completo</li>
+                    <li class="pending"><span class="marker"></span>Documentacao de resultados</li>
+                    <li class="pending"><span class="marker"></span>Aprovacao para producao</li>
+                </ul>
+                <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+            </div>
+        </div>
+
+        <!-- PRODUCTION -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2>6. PRODUCTION</h2>
+                <span class="status status-pending">0% Pendente</span>
+            </div>
+            <div class="phase-body">
+                <p class="phase-desc">Producao em escala e controle de qualidade.</p>
+                <ul class="tasks">
+                    <li class="pending"><span class="marker"></span>Pedido de lote piloto (5-10 unidades)</li>
+                    <li class="pending"><span class="marker"></span>Teste de lote piloto</li>
+                    <li class="pending"><span class="marker"></span>Ajustes de design (se necessario)</li>
+                    <li class="pending"><span class="marker"></span>Pedido de producao final</li>
+                    <li class="pending"><span class="marker"></span>Controle de qualidade (QC)</li>
+                    <li class="pending"><span class="marker"></span>Programacao em massa</li>
+                    <li class="pending"><span class="marker"></span>Embalagem e etiquetagem</li>
+                </ul>
+                <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+            </div>
+        </div>
+
+        <!-- OPERATE -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2>7. OPERATE</h2>
+                <span class="status status-pending">0% Pendente</span>
+            </div>
+            <div class="phase-body">
+                <p class="phase-desc">Operacao e uso em campo.</p>
+                <ul class="tasks">
+                    <li class="pending"><span class="marker"></span>Instalacao no ROV/Drone</li>
+                    <li class="pending"><span class="marker"></span>Configuracao inicial</li>
+                    <li class="pending"><span class="marker"></span>Calibracao de sensores</li>
+                    <li class="pending"><span class="marker"></span>Testes de voo/submersao</li>
+                    <li class="pending"><span class="marker"></span>Ajuste de parametros PID</li>
+                    <li class="pending"><span class="marker"></span>Operacao em missoes reais</li>
+                    <li class="pending"><span class="marker"></span>Coleta de dados de desempenho</li>
+                </ul>
+                <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+            </div>
+        </div>
+
+        <!-- MONITOR -->
+        <div class="phase">
+            <div class="phase-header">
+                <h2>8. MONITOR</h2>
+                <span class="status status-pending">0% Pendente</span>
+            </div>
+            <div class="phase-body">
+                <p class="phase-desc">Monitoramento, manutencao e melhorias.</p>
+                <ul class="tasks">
+                    <li class="pending"><span class="marker"></span>Telemetria em tempo real</li>
+                    <li class="pending"><span class="marker"></span>Logs de operacao</li>
+                    <li class="pending"><span class="marker"></span>Analise de falhas</li>
+                    <li class="pending"><span class="marker"></span>Atualizacoes de firmware OTA</li>
+                    <li class="pending"><span class="marker"></span>Feedback para proximas versoes</li>
+                    <li class="pending"><span class="marker"></span>Documentacao de licoes aprendidas</li>
+                    <li class="pending"><span class="marker"></span>Planejamento de Rev 2.0</li>
+                </ul>
+                <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+            </div>
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="summary">
+            <h2>Progresso Geral</h2>
+            <div class="overall-bar">
+                <div class="overall-fill" style="width: 40%">40%</div>
+            </div>
+            
+            <table class="summary-table">
+                <tr><td>1. Plan</td><td>100%</td><td>Concluido</td></tr>
+                <tr><td>2. Code</td><td>100%</td><td>Firmware + PCB prontos</td></tr>
+                <tr><td>3. Build</td><td>88%</td><td>Aguardando envio JLCPCB</td></tr>
+                <tr><td>4. Test</td><td>0%</td><td>Pendente</td></tr>
+                <tr><td>5. Homologation</td><td>0%</td><td>Pendente</td></tr>
+                <tr><td>6. Production</td><td>0%</td><td>Pendente</td></tr>
+                <tr><td>7. Operate</td><td>0%</td><td>Pendente</td></tr>
+                <tr><td>8. Monitor</td><td>0%</td><td>Pendente</td></tr>
+            </table>
+
+        </div>
+
+    </div>
+</body>
+</html>
